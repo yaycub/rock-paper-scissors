@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="r-p-s.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>RPS</title>
+</head>
+
+<body>
+    <header>
+        <h1>RPS&#8482;</h1>
+        <nav>
+            <a href="../index.html">Go back</a>
+        </nav>
+    </header>
+    <div class="instructions">
+        <ul>
+            <strong>Instructions:
+            <li>Pick between rock, paper, <em>OR</em> scissors!</li>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+            <li>If you pick the same option as the computer it is a MF'n DRAW D00d</li>
+            <li>Click the 'FIGHT' button to see if you KO'd the computer</li>
+        </ul>
+    </div>
+    <div class="radio-selectors">
+        <label><input type="radio" name="rps" value="rock">Rock</label>
+        <label><input type="radio" name="rps" value="paper">Paper</label>
+        <label><input type="radio" name="rps" value="scissors">Scissors</label>
+    </div>
+    <div id="button"><button id="button">FIGHT</button></div>
+    <section class="results"><div>You Chose: <span id="user-choice"></span> | 
+    The Evil Computer Chose: <span id="computer-choice"></span></div>
+    <div><span id="win-or-lose"></span></div>
+    <div>Wins: <span id="wins"></span></div>
+    <div>Losses: <span id="losses"></span></div>
+    <div>Draws: <span id="draws"></span></div></section>
+    <script src="r-p-s.js" type="module"></script>
+</body>
+
+</html>
