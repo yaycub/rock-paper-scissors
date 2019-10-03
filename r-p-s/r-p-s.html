@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="r-p-s.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>RPS</title>
 </head>
 
@@ -18,7 +19,7 @@
     </header>
     <div class="instructions">
         <ul>
-            Instructions:
+            <strong>Instructions:</strong>
             <li>Pick between rock, paper, <em>OR</em> scissors!</li>
             <li>Rock beats Scissors</li>
             <li>Scissors beats Paper</li>
@@ -32,13 +33,13 @@
         <label><input type="radio" name="rps" value="paper">Paper</label>
         <label><input type="radio" name="rps" value="scissors">Scissors</label>
     </div>
-    <button id="button">FIGHT</button>
-    <div>You Chose: <span id="user-choice"></span></div>
-    <div>The Evil Computer Chose: <span id="computer-choice"></span></div>
+    <div id="button"><button id="button">FIGHT</button></div>
+    <section class="results"><div>You Chose: <span id="user-choice"></span> | 
+    The Evil Computer Chose: <span id="computer-choice"></span></div>
     <div><span id="win-or-lose"></span></div>
     <div>Wins: <span id="wins"></span></div>
     <div>Losses: <span id="losses"></span></div>
-    <div>Draws: <span id="draws"></span></div>
+    <div>Draws: <span id="draws"></span></div></section>
     <script src="r-p-s.js" type="module"></script>
 </body>
 

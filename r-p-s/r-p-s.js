@@ -14,13 +14,13 @@ let losses = 0;
 let draws = 0;
 
 // Utilities
-const editDisplay = (result) => {
+const tallyDisplay = (result) => {
     if (result === 'win') {
         resultDisplay.textContent = 'YOU WINNNN';
         wins++;
         winDisplay.textContent = wins;
     } else if (result === 'draw'){
-        resultDisplay.textContent = 'It is a DRAW, d00d!'
+        resultDisplay.textContent = 'It is a DRAW, d00d!';
         draws++;
         drawDisplay.textContent = draws;
     } else if (result === 'lose'){
@@ -45,7 +45,7 @@ const makeSelection = () => {
     choiceDisplay(userInputValue, computerValue);
 
     const winOrLose = checkResults(userInputValue, computerValue);
-    editDisplay(winOrLose);
+    tallyDisplay(winOrLose);
 };
 
 

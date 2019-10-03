@@ -1,0 +1,36 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    background-color: cornsilk;
+}
+header{
+    text-align: center;
+    margin-bottom: 5px;
+}
+nav{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.radio-selectors{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+#button{
+    text-align: center;
+}
+button{
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 10px;
+}
+.results{
+    text-align: center;
+    font-size: 10px;
+}
